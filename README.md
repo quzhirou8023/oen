@@ -10,16 +10,6 @@ Edge Download: https://microsoftedge.microsoft.com/addons/detail/dalhgafbhpdolib
 
 Firefox Download: https://addons.mozilla.org/en-US/firefox/addon/1vpn
 
-## Links
-
-Privacy Policy: https://1vpn.org/privacy_policy
-
-Terms of Service: https://1vpn.org/terms_of_service
-
-Twitter: https://twitter.com/1VPNofficial
-
-Reddit: https://www.reddit.com/r/1VPN
-
 ## Development Commands
 
 Build extension:
