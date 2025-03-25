@@ -38,7 +38,7 @@ const Popup = () => {
 
     chrome.storage.local.get(['currentLocation'], (storage) => {
       if (!storage.currentLocation) {
-        setCurrentLocation(locations.at(-1))
+        setCurrentLocation(locations[0])
       }
       setIsLoaded(true)
     })
@@ -66,7 +66,7 @@ const Popup = () => {
         return (
           <LocationsPage
             locations={isPremium ? locations : freeLocations}
-            currentLocation={currentLocation || freeLocations.at(-1)}
+            currentLocation={currentLocation || freeLocations[0]}
             handleLocationToggle={handleLocationToggle}
             isPremium={isPremium}
             messages={messages}
@@ -89,7 +89,7 @@ const Popup = () => {
           <MainPage
             isPremium={isPremium}
             isConnected={isConnected}
-            currentLocation={currentLocation || freeLocations.at(-1)}
+            currentLocation={currentLocation || freeLocations[0]}
             locations={isPremium ? locations : freeLocations}
             handleConnectionToggle={handleConnectionToggle}
             messages={messages}
