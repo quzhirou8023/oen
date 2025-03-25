@@ -30,14 +30,14 @@ test.describe('VPN Browser Extension - Free Account Features', () => {
     await page.locator('#locationsPageButton').click()
     await expect(page.locator('text=Locations')).toBeVisible()
 
-    await page.locator('#de').click()
+    await page.locator('#nl').click()
     await expect(page.locator('text=Connected')).toBeVisible()
 
     const newIP = await checkIP(page)
 
     expect(newIP).not.toBe(
       initialIP,
-      `IP should change when connecting to Germany`
+      `IP should change when connecting to Netherlands`
     )
   })
 

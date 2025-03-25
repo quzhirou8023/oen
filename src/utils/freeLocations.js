@@ -1,5 +1,25 @@
 const freeLocations = [
   {
+    country: 'Netherlands',
+    countryCode: 'nl',
+    hosts: [
+      { hostname: 'netherlands-free-1.cloudcdnflare.site', port: 443 },
+      { hostname: 'netherlands-free-2.cloudspacecdn.site', port: 443 },
+    ],
+    latitude: 52.3878,
+    longitude: 4.9302,
+  },
+  {
+    country: 'USA West',
+    countryCode: 'usw',
+    hosts: [
+      { hostname: 'usa-west-free-1.cloudcdnflare.site', port: 443 },
+      { hostname: 'usa-west-free-2.cloudspacecdn.site', port: 443 },
+    ],
+    latitude: 34.0541,
+    longitude: -118.2441,
+  },
+  {
     country: 'Australia',
     countryCode: 'au',
     isPremium: true,
@@ -27,12 +47,7 @@ const freeLocations = [
   {
     country: 'Germany',
     countryCode: 'de',
-    hosts: [
-      { hostname: 'germany-free-1.cloudcdnflare.site', port: 443 },
-      { hostname: 'germany-free-2.cloudspacecdn.site', port: 443 },
-    ],
-    latitude: 50.119,
-    longitude: 8.7147,
+    isPremium: true,
   },
   {
     country: 'India',
@@ -52,11 +67,6 @@ const freeLocations = [
   {
     country: 'Mexico',
     countryCode: 'mx',
-    isPremium: true,
-  },
-  {
-    country: 'Netherlands',
-    countryCode: 'nl',
     isPremium: true,
   },
   {
@@ -98,16 +108,6 @@ const freeLocations = [
     country: 'USA South',
     countryCode: 'uss',
     isPremium: true,
-  },
-  {
-    country: 'USA West',
-    countryCode: 'usw',
-    hosts: [
-      { hostname: 'usa-west-free-1.cloudcdnflare.site', port: 443 },
-      { hostname: 'usa-west-free-2.cloudspacecdn.site', port: 443 },
-    ],
-    latitude: 34.0541,
-    longitude: -118.2441,
   },
 ]
 
