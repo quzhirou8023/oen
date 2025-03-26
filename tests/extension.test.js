@@ -27,13 +27,17 @@ test.describe('VPN Browser Extension - Free Account Features', () => {
   }) => {
     const initialIP = await toggleProxyAndCheckIP(page)
 
+    console.log('Initial IP:', initialIP)
+
     await page.locator('#locationsPageButton').click()
     await expect(page.locator('text=Locations')).toBeVisible()
 
-    await page.locator('#nl').click()
+    await page.locator('#usw').click()
     await expect(page.locator('text=Connected')).toBeVisible()
 
     const newIP = await checkIP(page)
+
+    console.log('New IP:', newIP)
 
     expect(newIP).not.toBe(
       initialIP,
