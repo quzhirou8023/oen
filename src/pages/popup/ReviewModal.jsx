@@ -10,13 +10,13 @@ const ReviewModal = ({ messages }) => {
   useEffect(() => {
     chrome.storage.local.get(
       ['installTime', 'reviewed', 'lastClosedTime'],
-      (result) => {
+      (storage) => {
         const currentTime = Date.now()
-        const installTime = result.installTime || currentTime
-        const reviewed = result.reviewed || false
-        const lastClosedTime = result.lastClosedTime || 0
+        const installTime = storage.installTime || currentTime
+        const reviewed = storage.reviewed || false
+        const lastClosedTime = storage.lastClosedTime || 0
 
-        if (!result.installTime) {
+        if (!storage.installTime) {
           chrome.storage.local.set({ installTime: currentTime })
         }
 
