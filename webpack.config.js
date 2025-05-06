@@ -119,7 +119,7 @@ var options = {
     new webpack.ProgressPlugin(),
     new Dotenv({
       path: './.env',
-      safe: true,
+      safe: false,
       systemvars: true,
       defaults: false,
     }),
