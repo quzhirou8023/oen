@@ -39,8 +39,8 @@
     "message": "禁用WebRTC以防止洩露您的真實IP地址。"
   },
   "locations": { "message": "位置" },
-  "reviewTitle": { "message": "請留下評論" },
-  "reviewSubtitle": { "message": "我們依賴您的正面評論來成長" },
+  "reviewModalTitle": { "message": "留下評論以解鎖此位置" },
+  "reviewModalButton": { "message": "留下評論" },
   "upgradeLocation": { "message": "升級以存取此位置。" },
   "installSuccess": {
     "message": "1VPN已成功安裝"

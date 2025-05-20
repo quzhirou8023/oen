@@ -44,10 +44,10 @@
   },
 
   "locations": { "message": "Standorte" },
-  "reviewTitle": { "message": "Hinterlassen Sie eine Bewertung" },
-  "reviewSubtitle": {
-    "message": "Wir sind auf Ihr positives Feedback angewiesen, um zu wachsen"
+  "reviewModalTitle": {
+    "message": "Hinterlasse eine Bewertung, um diesen Ort freizuschalten"
   },
+  "reviewModalButton": { "message": "Bewertung hinterlassen" },
   "upgradeLocation": {
     "message": "Upgraden, um diesen Standort zu erreichen"
   },

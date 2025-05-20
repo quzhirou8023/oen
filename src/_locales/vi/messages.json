@@ -41,10 +41,8 @@
     "message": "Tắt WebRTC để ngăn địa chỉ IP thực của bạn bị rò rỉ."
   },
   "locations": { "message": "Địa điểm" },
-  "reviewTitle": { "message": "Hãy để lại đánh giá" },
-  "reviewSubtitle": {
-    "message": "Chúng tôi dựa vào phản hồi tích cực của bạn để phát triển"
-  },
+  "reviewModalTitle": { "message": "Để lại đánh giá để mở khóa vị trí này" },
+  "reviewModalButton": { "message": "Để lại đánh giá" },
   "upgradeLocation": { "message": "Hãy nâng cấp để truy cập địa điểm này" },
   "installSuccess": {
     "message": "1VPN đã được cài đặt thành công"

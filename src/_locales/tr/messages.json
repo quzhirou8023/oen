@@ -41,10 +41,10 @@
     "message": "Gerçek IP adresinizin sızmasını önlemek için WebRTC'yi devre dışı bırakın."
   },
   "locations": { "message": "Konumlar" },
-  "reviewTitle": { "message": "Bir Yorum Bırakın" },
-  "reviewSubtitle": {
-    "message": "Büyümek için olumlu geri bildiriminize güveniyoruz"
+  "reviewModalTitle": {
+    "message": "Bu konumu açmak için bir inceleme bırakın"
   },
+  "reviewModalButton": { "message": "İnceleme bırak" },
   "upgradeLocation": { "message": "Bu konuma erişmek için planını yükselt" },
   "installSuccess": {
     "message": "1VPN başarıyla kuruldu"

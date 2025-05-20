@@ -1,8 +1,10 @@
+import { useState } from 'react'
 import { Flex } from 'theme-ui'
 import { isFirefox, websiteUrl } from 'utils/constants'
 import flags from 'utils/flags'
 import PageHeader from './PageHeader'
 import Toggle from './Toggle'
+import ReviewModal from './ReviewModal'
 
 const LocationsPage = ({
   locations,
@@ -10,6 +12,8 @@ const LocationsPage = ({
   handleLocationToggle,
   messages,
 }) => {
+  const [isReviewModalOpen, setIsReviewModalOpen] = useState(false)
+
   return (
     <PageHeader
       title={messages.locations}
@@ -17,6 +21,11 @@ const LocationsPage = ({
         p: '0 0 0 24px',
       }}
     >
+      <ReviewModal
+        messages={messages}
+        isOpen={isReviewModalOpen}
+        onClose={() => setIsReviewModalOpen(false)}
+      />
       <Flex
         sx={{
           position: 'relative',
@@ -32,10 +41,18 @@ const LocationsPage = ({
               title={messages[location.countryCode]}
               id={location.countryCode}
               checked={currentLocation.country === location.country}
-              onToggle={() => {
+              onToggle={async () => {
                 if (location.isPremium) {
                   chrome.tabs.create({
                     url: `${websiteUrl}/select_plan`,
+                  })
+                } else if (location.ratingLocked) {
+                  chrome.storage.local.get(['reviewed'], (result) => {
+                    if (result.reviewed === true) {
+                      handleLocationToggle(location)
+                    } else {
+                      setIsReviewModalOpen(true)
+                    }
                   })
                 } else {
                   handleLocationToggle(location)

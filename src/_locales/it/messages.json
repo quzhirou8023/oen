@@ -41,6 +41,10 @@
     "message": "Disabilita WebRTC per prevenire la perdita del tuo vero indirizzo IP."
   },
   "locations": { "message": "Località" },
+  "reviewModalTitle": {
+    "message": "Lascia una recensione per sbloccare questa posizione"
+  },
+  "reviewModalButton": { "message": "Lascia una recensione" },
   "rateText1": { "message": "Se ti piace 1VPN, per favore" },
   "rateText2": { "message": "votaci con 5 stelle" },
   "upgradeLocation": {

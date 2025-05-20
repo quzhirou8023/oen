@@ -11,6 +11,18 @@ const freeLocations = [
     longitude: 4.9302,
   },
   {
+    country: 'Singapore',
+    countryCode: 'sg',
+    hosts: [
+      { hostname: 'singapore-free-https-1.cloudspacecdn.site', port: 443 },
+      { hostname: 'singapore-free-https-1.cloudnetcdn.site', port: 443 },
+      { hostname: 'singapore-free-https-1.networkcdn.site', port: 443 },
+    ],
+    latitude: 1.3102,
+    longitude: 103.6831,
+    ratingLocked: true,
+  },
+  {
     country: 'USA West',
     countryCode: 'usw',
     hosts: [
@@ -74,11 +86,6 @@ const freeLocations = [
   {
     country: 'Poland',
     countryCode: 'pl',
-    isPremium: true,
-  },
-  {
-    country: 'Singapore',
-    countryCode: 'sg',
     isPremium: true,
   },
   {

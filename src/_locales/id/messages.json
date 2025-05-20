@@ -43,10 +43,10 @@
     "message": "Nonaktifkan WebRTC untuk mencegah alamat IP asli Anda bocor."
   },
   "locations": { "message": "Lokasi" },
-  "reviewTitle": { "message": "Tinggalkan ulasan" },
-  "reviewSubtitle": {
-    "message": "Kami bergantung pada umpan balik positif Anda untuk berkembang"
+  "reviewModalTitle": {
+    "message": "Tinggalkan Ulasan untuk Membuka Lokasi Ini"
   },
+  "reviewModalButton": { "message": "Tinggalkan Ulasan" },
   "upgradeLocation": { "message": "Upgrade untuk mengakses lokasi ini" },
   "installSuccess": {
     "message": "1VPN telah berhasil diinstal"

@@ -43,10 +43,10 @@
     "message": "Désactivez WebRTC pour empêcher votre adresse IP réelle de fuiter."
   },
   "locations": { "message": "Emplacements" },
-  "reviewTitle": { "message": "Laissez un avis" },
-  "reviewSubtitle": {
-    "message": "Nous comptons sur vos retours positifs pour nous développer"
+  "reviewModalTitle": {
+    "message": "Laissez un avis pour débloquer cet emplacement"
   },
+  "reviewModalButton": { "message": "Laisser un avis" },
   "upgradeLocation": {
     "message": "Mettez à niveau pour accéder à cet emplacement"
   },

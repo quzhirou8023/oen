@@ -39,8 +39,8 @@
     "message": "تعطيل WebRTC لمنع تسرب عنوان IP الحقيقي الخاص بك."
   },
   "locations": { "message": "المواقع" },
-  "reviewTitle": { "message": "اترك مراجعة" },
-  "reviewSubtitle": { "message": "نعتمد على تعليقاتك الإيجابية للنمو" },
+  "reviewModalTitle": { "message": "اترك مراجعة لفتح هذا الموقع" },
+  "reviewModalButton": { "message": "اترك مراجعة" },
   "upgradeLocation": { "message": "حدث البرنامج للوصول إلى هذا الموقع" },
   "installSuccess": {
     "message": "تم تثبيت 1VPN بنجاح"

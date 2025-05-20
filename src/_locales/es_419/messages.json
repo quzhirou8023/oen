@@ -43,10 +43,10 @@
     "message": "Desactiva WebRTC para evitar que se filtre tu dirección IP real."
   },
   "locations": { "message": "Ubicaciones" },
-  "reviewTitle": { "message": "Deja una reseña" },
-  "reviewSubtitle": {
-    "message": "Dependemos de tus comentarios positivos para crecer"
+  "reviewModalTitle": {
+    "message": "Deja una reseña para desbloquear esta ubicación"
   },
+  "reviewModalButton": { "message": "Dejar reseña" },
   "upgradeLocation": { "message": "Actualice para acceder a esta ubicación" },
   "installSuccess": {
     "message": "1VPN se ha instalado correctamente"

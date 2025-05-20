@@ -41,10 +41,10 @@
     "message": "Desative o WebRTC para evitar que seu endereço IP real vaze."
   },
   "locations": { "message": "Locais" },
-  "reviewTitle": { "message": "Deixe uma avaliação" },
-  "reviewSubtitle": {
-    "message": "Contamos com seu feedback positivo para crescer"
+  "reviewModalTitle": {
+    "message": "Deixe uma avaliação para desbloquear esta localização"
   },
+  "reviewModalButton": { "message": "Deixar avaliação" },
   "upgradeLocation": { "message": "Faça o upgrade para acessar este local" },
   "installSuccess": {
     "message": "1VPN foi instalado com sucesso"

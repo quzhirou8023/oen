@@ -41,10 +41,10 @@
     "message": "Отключите WebRTC, чтобы предотвратить утечку вашего реального IP-адреса."
   },
   "locations": { "message": "Местоположения" },
-  "reviewTitle": { "message": "Оставьте отзыв" },
-  "reviewSubtitle": {
-    "message": "Мы полагаемся на ваши положительные отзывы, чтобы расти"
+  "reviewModalTitle": {
+    "message": "Оставьте отзыв, чтобы разблокировать это место"
   },
+  "reviewModalButton": { "message": "Оставить отзыв" },
   "upgradeLocation": {
     "message": "Для доступа к местоположению обновите план"
   },

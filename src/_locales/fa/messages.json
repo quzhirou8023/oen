@@ -41,6 +41,10 @@
     "message": "WebRTC را غیرفعال کنید تا از نشت آدرس IP واقعی خود جلوگیری کنید."
   },
   "locations": { "message": "موقعیت‌های مکانی" },
+  "reviewModalTitle": {
+    "message": "برای باز کردن این مکان، یک بازبینی بنویسید"
+  },
+  "reviewModalButton": { "message": "نوشتن بازبینی" },
   "rateText1": { "message": "اگر از 1VPN لذت می‌برید، لطفاً" },
   "rateText2": { "message": "۵ ستاره به ما بدهید" },
   "upgradeLocation": {

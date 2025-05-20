@@ -41,6 +41,10 @@
     "message": "Вимкніть WebRTC, щоб запобігти витоку вашої реальної IP-адреси."
   },
   "locations": { "message": "Локації" },
+  "reviewModalTitle": {
+    "message": "Залиште відгук, щоб розблокувати це місце"
+  },
+  "reviewModalButton": { "message": "Залишити відгук" },
   "rateText1": { "message": "Якщо вам подобається 1VPN, будь ласка" },
   "rateText2": { "message": "оцініть нас на 5 зірок" },
   "upgradeLocation": {

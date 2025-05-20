@@ -39,10 +39,10 @@
     "message": "실제 IP 주소가 누출되지 않도록 WebRTC를 비활성화합니다."
   },
   "locations": { "message": "지역위치" },
-  "reviewTitle": { "message": "리뷰를 남겨주세요" },
-  "reviewSubtitle": {
-    "message": "우리는 성장하기 위해 긍정적인 피드백에 의존합니다"
+  "reviewModalTitle": {
+    "message": "이 위치를 잠금 해제하려면 리뷰를 남기세요"
   },
+  "reviewModalButton": { "message": "리뷰 남기기" },
   "upgradeLocation": {
     "message": "이 지역위치에 접근하려면 업그레이드하세요"
   },

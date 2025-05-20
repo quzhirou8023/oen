@@ -43,6 +43,10 @@
     "message": "Wyłącz WebRTC, aby zapobiec wyciekowi Twojego prawdziwego adresu IP."
   },
   "locations": { "message": "Lokalizacje" },
+  "reviewModalTitle": {
+    "message": "Zostaw recenzję, aby odblokować tę lokalizację"
+  },
+  "reviewModalButton": { "message": "Zostaw recenzję" },
   "rateText1": { "message": "Jeśli podoba Ci się 1VPN," },
   "rateText2": { "message": "oceń nas na 5 gwiazdek" },
   "upgradeLocation": {

@@ -40,13 +40,14 @@
     "message": "Disable WebRTC to prevent your real IP address from leaking."
   },
   "locations": { "message": "Locations" },
-  "reviewTitle": { "message": "Leave a Review" },
-  "reviewSubtitle": { "message": "We rely on your positive feedback to grow" },
+  "reviewModalTitle": { "message": "Leave a Review To Unlock This Location" },
+  "reviewModalButton": { "message": "Leave Review" },
   "upgradeLocation": { "message": "Upgrade to access this location" },
   "installSuccess": { "message": "1VPN Has Been Successfully Installed" },
   "installInstructions": {
     "message": "Click on the puzzle icon next to the address bar. Then click on the pushpin icon to pin the Extension."
   },
+
   "au": { "message": "Australia" },
   "br": { "message": "Brazil" },
   "ca": { "message": "Canada" },
