@@ -44,9 +44,9 @@ const ReviewModal = ({ messages, isOpen, onClose }) => {
               width: '220px',
               background: 'white',
               borderRadius: '6px',
-              p: '36px 24px 24px 24px',
+              p: '24px',
               textAlign: 'center',
-              gap: '12px',
+              gap: '8px',
               position: 'relative',
               cursor: 'default',
             }}
