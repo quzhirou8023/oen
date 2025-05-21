@@ -4,14 +4,14 @@ import XIcon from 'assets/x.svg'
 
 const ReviewModal = ({ messages, isOpen, onClose }) => {
   const handleReviewClick = () => {
-    chrome.storage.local.set({ reviewed: true })
+    chrome.storage.local.set({ reviewed: true }).then(() => {
+      onClose()
 
-    onClose()
+      const trustpilotUrl = 'https://trustpilot.com/evaluate/1vpn.org'
+      const openTrustpilot = Math.random() < 0.2
 
-    const trustpilotUrl = 'https://trustpilot.com/evaluate/1vpn.org'
-    const openTrustpilot = Math.random() < 0.2
-
-    window.open(openTrustpilot ? trustpilotUrl : reviewUrl, '_blank')
+      window.open(openTrustpilot ? trustpilotUrl : reviewUrl, '_blank')
+    })
   }
 
   return (

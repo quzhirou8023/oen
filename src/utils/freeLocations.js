@@ -3,8 +3,8 @@ const freeLocations = [
     country: 'Netherlands',
     countryCode: 'nl',
     hosts: [
-      { hostname: 'netherlands-free-https-1.cloudnetcdn.site', port: 443 },
       { hostname: 'netherlands-free-2.cloudspacecdn.site', port: 443 },
+      { hostname: 'netherlands-free-https-1.cloudnetcdn.site', port: 443 },
       { hostname: 'netherlands-free-https-1.cloudspacecdn.site', port: 443 },
     ],
     latitude: 52.3878,
@@ -26,8 +26,8 @@ const freeLocations = [
     country: 'USA West',
     countryCode: 'usw',
     hosts: [
-      { hostname: 'usa-west-free-https-1.cloudnetcdn.site', port: 443 },
       { hostname: 'usa-west-free-2.cloudspacecdn.site', port: 443 },
+      { hostname: 'usa-west-free-https-1.cloudnetcdn.site', port: 443 },
       { hostname: 'usa-west-free-https-1.networkcdn.site', port: 443 },
     ],
     latitude: 34.0541,
