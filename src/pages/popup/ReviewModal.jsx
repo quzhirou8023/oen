@@ -63,7 +63,7 @@ const ReviewModal = ({ messages, isOpen, onClose }) => {
             />
             <Box
               sx={{
-                mb: '6px',
+                my: '6px',
               }}
             >
               {messages.reviewModalTitle}

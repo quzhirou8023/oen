@@ -41,7 +41,7 @@
   },
   "locations": { "message": "지역위치" },
   "reviewModalTitle": {
-    "message": "이 위치를 잠금 해제하려면 리뷰를 남기세요"
+    "message": "이 위치를 잠금 해제하려면 별 5개 리뷰를 남겨주세요"
   },
   "reviewModalButton": { "message": "리뷰 남기기" },
   "upgradeLocation": {

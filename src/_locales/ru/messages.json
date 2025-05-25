@@ -43,7 +43,7 @@
   },
   "locations": { "message": "Местоположения" },
   "reviewModalTitle": {
-    "message": "Оставьте отзыв, чтобы разблокировать это место"
+    "message": "Оставьте 5-звёздочный отзыв, чтобы разблокировать это местоположение"
   },
   "reviewModalButton": { "message": "Оставить отзыв" },
   "upgradeLocation": {

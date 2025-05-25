@@ -43,7 +43,7 @@
   },
   "locations": { "message": "Konumlar" },
   "reviewModalTitle": {
-    "message": "Bu konumu açmak için bir inceleme bırakın"
+    "message": "Bu konumun kilidini açmak için 5 yıldızlı yorum bırakın"
   },
   "reviewModalButton": { "message": "İnceleme bırak" },
   "upgradeLocation": { "message": "Bu konuma erişmek için planını yükselt" },

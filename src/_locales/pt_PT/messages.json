@@ -43,7 +43,7 @@
   },
   "locations": { "message": "Locais" },
   "reviewModalTitle": {
-    "message": "Deixe uma avaliação para desbloquear esta localização"
+    "message": "Deixe uma avaliação de 5 estrelas para desbloquear este local"
   },
   "reviewModalButton": { "message": "Deixar avaliação" },
   "upgradeLocation": { "message": "Faça o upgrade para acessar este local" },

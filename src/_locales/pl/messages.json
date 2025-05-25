@@ -45,7 +45,7 @@
   },
   "locations": { "message": "Lokalizacje" },
   "reviewModalTitle": {
-    "message": "Zostaw recenzję, aby odblokować tę lokalizację"
+    "message": "Zostaw recenzję 5-gwiazdkową, aby odblokować tę lokalizację"
   },
   "reviewModalButton": { "message": "Zostaw recenzję" },
   "rateText1": { "message": "Jeśli podoba Ci się 1VPN," },

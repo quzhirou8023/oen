@@ -46,7 +46,7 @@
 
   "locations": { "message": "Standorte" },
   "reviewModalTitle": {
-    "message": "Hinterlasse eine Bewertung, um diesen Ort freizuschalten"
+    "message": "Hinterlasse eine 5-Sterne-Bewertung, um diesen Standort freizuschalten"
   },
   "reviewModalButton": { "message": "Bewertung hinterlassen" },
   "upgradeLocation": {

@@ -40,7 +40,9 @@
     "message": "禁用WebRTC以防止洩露您的真實IP地址。"
   },
   "locations": { "message": "位置" },
-  "reviewModalTitle": { "message": "留下評論以解鎖此位置" },
+  "reviewModalTitle": {
+    "message": "留下五星好評以解鎖此位置"
+  },
   "reviewModalButton": { "message": "留下評論" },
   "upgradeLocation": { "message": "升級以存取此位置。" },
   "installSuccess": {

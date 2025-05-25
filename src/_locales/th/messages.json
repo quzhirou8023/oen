@@ -44,7 +44,9 @@
     "message": "ปิดใช้งาน WebRTC เพื่อป้องกันไม่ให้ที่อยู่ IP จริงของคุณรั่วไหล"
   },
   "locations": { "message": "สถานที่ตั้ง" },
-  "reviewModalTitle": { "message": "เขียนรีวิวเพื่อปลดล็อกสถานที่นี้" },
+  "reviewModalTitle": {
+    "message": "กรุณาให้รีวิว 5 ดาวเพื่อปลดล็อกตำแหน่งนี้"
+  },
   "reviewModalButton": { "message": "เขียนรีวิว" },
   "rateText1": { "message": "หากคุณถูกใจ 1VPN โปรด" },
   "rateText2": { "message": "ให้คะแนน 5 ดาวกับเรา" },

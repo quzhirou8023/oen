@@ -45,7 +45,7 @@
   },
   "locations": { "message": "Emplacements" },
   "reviewModalTitle": {
-    "message": "Laissez un avis pour débloquer cet emplacement"
+    "message": "Laissez un avis 5 étoiles pour débloquer cet emplacement"
   },
   "reviewModalButton": { "message": "Laisser un avis" },
   "upgradeLocation": {

@@ -43,7 +43,7 @@
   },
   "locations": { "message": "Локації" },
   "reviewModalTitle": {
-    "message": "Залиште відгук, щоб розблокувати це місце"
+    "message": "Залиште 5-зірковий відгук, щоб розблокувати це місце"
   },
   "reviewModalButton": { "message": "Залишити відгук" },
   "rateText1": { "message": "Якщо вам подобається 1VPN, будь ласка" },

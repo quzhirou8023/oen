@@ -45,7 +45,7 @@
   },
   "locations": { "message": "Lokasi" },
   "reviewModalTitle": {
-    "message": "Tinggalkan Ulasan untuk Membuka Lokasi Ini"
+    "message": "Tinggalkan ulasan 5 bintang untuk membuka lokasi ini"
   },
   "reviewModalButton": { "message": "Tinggalkan Ulasan" },
   "upgradeLocation": { "message": "Upgrade untuk mengakses lokasi ini" },

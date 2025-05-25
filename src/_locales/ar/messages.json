@@ -40,7 +40,9 @@
     "message": "تعطيل WebRTC لمنع تسرب عنوان IP الحقيقي الخاص بك."
   },
   "locations": { "message": "المواقع" },
-  "reviewModalTitle": { "message": "اترك مراجعة لفتح هذا الموقع" },
+  "reviewModalTitle": {
+    "message": "اترك مراجعة من 5 نجوم لفتح هذا الموقع"
+  },
   "reviewModalButton": { "message": "اترك مراجعة" },
   "upgradeLocation": { "message": "حدث البرنامج للوصول إلى هذا الموقع" },
   "installSuccess": {

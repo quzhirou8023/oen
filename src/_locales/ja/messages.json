@@ -41,7 +41,7 @@
   },
   "locations": { "message": "位置情報" },
   "reviewModalTitle": {
-    "message": "この場所をアンロックするにはレビューを残してください"
+    "message": "この場所をアンロックするには5つ星レビューを残してください"
   },
   "reviewModalButton": { "message": "レビューを残す" },
   "upgradeLocation": {

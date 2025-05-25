@@ -43,7 +43,7 @@
   },
   "locations": { "message": "موقعیت‌های مکانی" },
   "reviewModalTitle": {
-    "message": "برای باز کردن این مکان، یک بازبینی بنویسید"
+    "message": "برای باز کردن این مکان، یک نظر ۵ ستاره بگذارید"
   },
   "reviewModalButton": { "message": "نوشتن بازبینی" },
   "rateText1": { "message": "اگر از 1VPN لذت می‌برید، لطفاً" },
