@@ -3,6 +3,7 @@
   "extDesc": {
     "message": "無料VPN、無制限のデータ、高速、セキュアな暗号化、ログなしポリシー、簡単に使用可能。"
   },
+  "upgrade": { "message": "アップグレード" },
   "signUp": { "message": "サインアップ" },
   "login": { "message": "ログイン" },
   "continueText": { "message": "またはアカウントなしで続行" },

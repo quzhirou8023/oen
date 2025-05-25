@@ -100,15 +100,15 @@ test.describe('VPN Browser Extension - Free Account Features', () => {
     expect(isWebRTCDisabled).toBe(true, 'WebRTC should be disabled')
   })
 
-  test('should open signup page', async ({ page, context }) => {
+  test('should open select plan page', async ({ page, context }) => {
     await page.locator('#optionsPageButton').click()
 
     const [newPage] = await Promise.all([
       context.waitForEvent('page'),
-      page.locator('#signupButton').click(),
+      page.locator('#upgradeButton').click(),
     ])
 
-    await expect(newPage).toHaveURL('https://1vpn.org/signup/')
+    await expect(newPage).toHaveURL('https://1vpn.org/select_plan/')
   })
 
   test('should open login page and login', async ({ page, context }) => {

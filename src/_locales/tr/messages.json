@@ -3,6 +3,7 @@
   "extDesc": {
     "message": "Ücretsiz VPN, sınırsız veri, hızlı bağlantı, güvenli şifreleme, kayıt yok politikası ve kullanımı kolay."
   },
+  "upgrade": { "message": "Yükselt" },
   "signUp": { "message": "Kaydol" },
   "login": { "message": "Giriş Yap" },
   "continueText": { "message": "Veya hesapsız devam et" },

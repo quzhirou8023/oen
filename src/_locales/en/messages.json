@@ -3,6 +3,7 @@
   "extDesc": {
     "message": "Free VPN Proxy, Unlimited Data, Fast Speeds, Secure Encryption, No-Logs Policy, & Easy to Use."
   },
+  "upgrade": { "message": "Upgrade" },
   "signUp": { "message": "Sign Up" },
   "login": { "message": "Login" },
   "continueText": { "message": "Or continue without account" },

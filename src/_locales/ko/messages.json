@@ -3,6 +3,7 @@
   "extDesc": {
     "message": "무료 VPN, 무제한 데이터, 빠른 속도, 안전한 암호화, 로그 없음 정책, 사용이 간편."
   },
+  "upgrade": { "message": "업그레이드" },
   "signUp": { "message": "회원가입하기" },
   "login": { "message": "로그인" },
   "continueText": { "message": "또는 계정 없이 계속하기" },

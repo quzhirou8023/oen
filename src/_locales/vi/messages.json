@@ -3,6 +3,7 @@
   "extDesc": {
     "message": "VPN miễn phí, dữ liệu không giới hạn, tốc độ nhanh, mã hóa an toàn, không ghi nhật ký và dễ sử dụng."
   },
+  "upgrade": { "message": "Nâng cấp" },
   "signUp": { "message": "Đăng ký" },
   "login": { "message": "Đăng nhập" },
   "continueText": { "message": "Hoặc tiếp tục không cần tài khoản" },

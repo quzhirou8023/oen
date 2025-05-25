@@ -3,6 +3,7 @@
   "extDesc": {
     "message": "免費VPN，無限數據，快速速度，安全加密，無日誌政策，且容易使用。"
   },
+  "upgrade": { "message": "升級" },
   "signUp": { "message": "註冊" },
   "login": { "message": "登入" },
   "continueText": { "message": "或繼續無帳號登入" },

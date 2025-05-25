@@ -26,6 +26,7 @@ export const reviewUrl =
   `?hl=${chrome.i18n.getUILanguage()}`
 
 export const localeMessageKeys = [
+  'upgrade',
   'signUp',
   'login',
   'continueText',

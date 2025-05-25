@@ -76,6 +76,7 @@ const Popup = () => {
         return (
           <OptionsPage
             sessionAuthToken={sessionAuthToken}
+            isPremium={isPremium}
             spoofGeolocation={spoofGeolocation}
             setSpoofGeolocation={setSpoofGeolocation}
             disableWebRtc={disableWebRtc}

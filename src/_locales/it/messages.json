@@ -3,6 +3,7 @@
   "extDesc": {
     "message": "VPN gratuito, dati illimitati, velocità elevate, crittografia sicura, politica no-log e facile da usare."
   },
+  "upgrade": { "message": "Aggiorna" },
   "signUp": { "message": "Registrati" },
   "login": { "message": "Accedi" },
   "continueText": { "message": "Oppure continua senza account" },

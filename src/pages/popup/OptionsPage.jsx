@@ -5,6 +5,7 @@ import Toggle from './Toggle'
 
 const OptionsPage = ({
   sessionAuthToken,
+  isPremium,
   spoofGeolocation,
   setSpoofGeolocation,
   disableWebRtc,
@@ -44,7 +45,7 @@ const OptionsPage = ({
           justifyContent: 'space-between',
         }}
       >
-        {!sessionAuthToken && (
+        {!(sessionAuthToken && isPremium) && (
           <Flex
             sx={{
               gap: '20px',
@@ -53,26 +54,38 @@ const OptionsPage = ({
               borderColor: 'darkGrey',
             }}
           >
-            <Link
-              id="signupButton"
-              href={`${websiteUrl}/signup`}
-              target="_blank"
-              variant="styles.baseButton"
-            >
-              {messages.signUp}
-            </Link>
-            <Link
-              id="loginButton"
-              href={`${websiteUrl}/login`}
-              target="_blank"
-              variant="styles.baseButton"
-              sx={{
-                bg: 'transparent',
-                color: 'darkBlue',
-              }}
-            >
-              {messages.login}
-            </Link>
+            {sessionAuthToken && !isPremium ? (
+              <Link
+                href={`${websiteUrl}/select_plan`}
+                target="_blank"
+                variant="styles.baseButton"
+              >
+                {messages.upgrade}
+              </Link>
+            ) : (
+              <>
+                <Link
+                  id="upgradeButton"
+                  href={`${websiteUrl}/select_plan`}
+                  target="_blank"
+                  variant="styles.baseButton"
+                >
+                  {messages.upgrade}
+                </Link>
+                <Link
+                  id="loginButton"
+                  href={`${websiteUrl}/login`}
+                  target="_blank"
+                  variant="styles.baseButton"
+                  sx={{
+                    bg: 'transparent',
+                    color: 'darkBlue',
+                  }}
+                >
+                  {messages.login}
+                </Link>
+              </>
+            )}
           </Flex>
         )}
         <Flex

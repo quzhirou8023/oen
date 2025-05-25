@@ -3,6 +3,7 @@
   "extDesc": {
     "message": "VPN gratis, data tak terbatas, kecepatan cepat, enkripsi aman, kebijakan tanpa pencatatan, dan mudah digunakan."
   },
+  "upgrade": { "message": "Tingkatkan" },
   "signUp": { "message": "Daftar" },
   "login": { "message": "Masuk" },
   "continueText": { "message": "Atau lanjutkan tanpa akun" },
