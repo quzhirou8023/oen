@@ -10,6 +10,7 @@ const LocationsPage = ({
   locations,
   currentLocation,
   handleLocationToggle,
+  installDate,
   messages,
 }) => {
   const [isReviewModalOpen, setIsReviewModalOpen] = useState(false)
@@ -36,34 +37,43 @@ const LocationsPage = ({
         }}
       >
         <Flex sx={{ pt: '24px', gap: '24px', flexDirection: 'column' }}>
-          {locations.map((location) => (
-            <Toggle
-              title={messages[location.countryCode]}
-              id={location.countryCode}
-              checked={currentLocation.country === location.country}
-              onToggle={async () => {
-                if (location.isPremium) {
-                  chrome.tabs.create({
-                    url: `${websiteUrl}/select_plan`,
-                  })
-                } else if (location.ratingLocked) {
-                  chrome.storage.local.get(['reviewed'], (result) => {
-                    if (result.reviewed === true) {
-                      handleLocationToggle(location)
-                    } else {
-                      setIsReviewModalOpen(true)
-                    }
-                  })
-                } else {
-                  handleLocationToggle(location)
-                }
-              }}
-              icon={flags[location.countryCode]}
-              hideToggle={location.isPremium}
-              messages={messages}
-              key={location.countryCode}
-            />
-          ))}
+          {locations.map((location) => {
+            if (
+              location.ratingLocked &&
+              installDate &&
+              Date.now() - new Date(installDate).getTime() < 24 * 60 * 60 * 1000
+            ) {
+              return null
+            }
+            return (
+              <Toggle
+                title={messages[location.countryCode]}
+                id={location.countryCode}
+                checked={currentLocation.country === location.country}
+                onToggle={async () => {
+                  if (location.isPremium) {
+                    chrome.tabs.create({
+                      url: `${websiteUrl}/select_plan`,
+                    })
+                  } else if (location.ratingLocked) {
+                    chrome.storage.local.get(['reviewed'], (result) => {
+                      if (result.reviewed === true) {
+                        handleLocationToggle(location)
+                      } else {
+                        setIsReviewModalOpen(true)
+                      }
+                    })
+                  } else {
+                    handleLocationToggle(location)
+                  }
+                }}
+                icon={flags[location.countryCode]}
+                hideToggle={location.isPremium}
+                messages={messages}
+                key={location.countryCode}
+              />
+            )
+          })}
         </Flex>
       </Flex>
     </PageHeader>

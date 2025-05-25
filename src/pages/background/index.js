@@ -9,6 +9,8 @@ chrome.runtime.onInstalled.addListener((details) => {
   setBadge()
 
   if (details.reason === 'install') {
+    chrome.storage.local.set({ installDate: Date.now() })
+
     chrome.tabs.create({
       url: chrome.runtime.getURL('install.html'),
     })

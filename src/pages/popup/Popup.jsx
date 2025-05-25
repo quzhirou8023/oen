@@ -17,6 +17,7 @@ const Popup = () => {
   const [isLoaded, setIsLoaded] = useState(false)
 
   const [sessionAuthToken] = useChromeStorage('sessionAuthToken', '')
+  const [installDate] = useChromeStorage('installDate', Date.now())
   const [locations] = useChromeStorage('locations', freeLocations)
   const [isPremium] = useChromeStorage('isPremium', false)
   const [isConnected, setIsConnected] = useChromeStorage('isConnected', false)
@@ -68,7 +69,7 @@ const Popup = () => {
             locations={isPremium ? locations : freeLocations}
             currentLocation={currentLocation || freeLocations[0]}
             handleLocationToggle={handleLocationToggle}
-            isPremium={isPremium}
+            installDate={installDate}
             messages={messages}
           />
         )
