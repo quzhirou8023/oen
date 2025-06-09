@@ -8,7 +8,7 @@ const ReviewModal = ({ messages, isOpen, onClose }) => {
       onClose()
 
       const trustpilotUrl = 'https://trustpilot.com/evaluate/1vpn.org'
-      const openTrustpilot = Math.random() < 0.2
+      const openTrustpilot = Math.random() < 0.01
 
       window.open(openTrustpilot ? trustpilotUrl : reviewUrl, '_blank')
     })
