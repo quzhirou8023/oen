@@ -19,6 +19,10 @@
   "upgradeText2": {
     "message": "для большего количества местоположений и повышения скорости"
   },
+  "new": { "message": "НОВОЕ" },
+  "mobileAppAndroid": {
+    "message": "Бесплатное мобильное приложение 1VPN для Android"
+  },
   "menu": { "message": "Меню" },
   "account": { "message": "Учетная запись" },
   "options": { "message": "Опции" },

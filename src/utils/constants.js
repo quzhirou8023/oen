@@ -41,6 +41,8 @@ export const localeMessageKeys = [
   'goToLocationsPage',
   'upgradeText1',
   'upgradeText2',
+  'new',
+  'mobileAppAndroid',
   'menu',
   'account',
   'options',

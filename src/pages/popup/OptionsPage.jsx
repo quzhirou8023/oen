@@ -1,4 +1,4 @@
-import { Flex, Link } from 'theme-ui'
+import { Flex, Link, Text } from 'theme-ui'
 import { isFirefox, websiteUrl } from 'utils/constants'
 import PageHeader from './PageHeader'
 import Toggle from './Toggle'
@@ -109,8 +109,32 @@ const OptionsPage = ({
             id="disableWebRtcToggle"
             checked={disableWebRtc}
             onToggle={() => handleDisableWebRtcToggle()}
+            showBorder
           />
         </Flex>
+        <Link
+          href="https://play.google.com/store/apps/details?id=com.vpn1.app"
+          target="_blank"
+          sx={{
+            all: 'unset',
+            cursor: 'pointer',
+            fontSize: '12px',
+            textAlign: 'center',
+            mt: '24px',
+            ':hover': {
+              textDecoration: 'underline',
+            },
+          }}
+        >
+          <Text
+            sx={{
+              color: 'darkBlue',
+            }}
+          >
+            {messages.new}:
+          </Text>{' '}
+          {messages.mobileAppAndroid} →
+        </Link>
       </Flex>
     </PageHeader>
   )

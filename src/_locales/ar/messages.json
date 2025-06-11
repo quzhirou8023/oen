@@ -17,6 +17,8 @@
   "goToLocationsPage": { "message": "انتقل إلى صفحة المواقع" },
   "upgradeText1": { "message": "تحديث" },
   "upgradeText2": { "message": "لعرض المزيد من المواقع وسرعات أعلى" },
+  "new": { "message": "جديد" },
+  "mobileAppAndroid": { "message": "تطبيق 1VPN المجاني لنظام أندرويد" },
   "menu": { "message": "القائمة" },
   "account": { "message": "الحساب" },
   "options": { "message": "الخيارات" },

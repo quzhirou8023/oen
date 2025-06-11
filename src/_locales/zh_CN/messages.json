@@ -17,6 +17,8 @@
   "goToLocationsPage": { "message": "前往位置页面" },
   "upgradeText1": { "message": "升级" },
   "upgradeText2": { "message": "以获得更多位置和更快速度。" },
+  "new": { "message": "新品" },
+  "mobileAppAndroid": { "message": "适用于Android的免费1VPN移动应用" },
   "menu": { "message": "菜单" },
   "account": { "message": "账号" },
   "options": { "message": "选项" },

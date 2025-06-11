@@ -19,6 +19,8 @@
   "upgradeText2": {
     "message": "für mehr Standorte und schnellere Geschwindigkeiten"
   },
+  "new": { "message": "NEU" },
+  "mobileAppAndroid": { "message": "Kostenlose 1VPN-App für Android" },
   "menu": { "message": "Menü" },
   "account": { "message": "Konto" },
   "options": { "message": "Einstellungen" },

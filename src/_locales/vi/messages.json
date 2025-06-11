@@ -19,6 +19,10 @@
   "upgradeText2": {
     "message": "để có thêm nhiều địa điểm và có tốc độ nhanh hơn"
   },
+  "new": { "message": "MỚI" },
+  "mobileAppAndroid": {
+    "message": "Ứng dụng di động miễn phí 1VPN cho Android"
+  },
   "menu": { "message": "Menu" },
   "account": { "message": "Tài khoản" },
   "options": { "message": "Tùy chọn" },

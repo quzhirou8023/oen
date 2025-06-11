@@ -176,6 +176,9 @@ const MainPage = ({
                   fontSize: '12px',
                   textAlign: 'center',
                   mt: '24px',
+                  ':hover': {
+                    textDecoration: 'underline',
+                  },
                 }}
               >
                 <Text

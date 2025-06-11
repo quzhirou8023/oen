@@ -17,6 +17,8 @@
   "goToLocationsPage": { "message": "Vai alla pagina delle località" },
   "upgradeText1": { "message": "Aggiorna" },
   "upgradeText2": { "message": "per più località e velocità più elevate" },
+  "new": { "message": "NUOVO" },
+  "mobileAppAndroid": { "message": "App mobile gratuita di 1VPN per Android" },
   "menu": { "message": "Menu" },
   "account": { "message": "Account" },
   "options": { "message": "Opzioni" },

@@ -19,6 +19,11 @@
   "upgradeText2": {
     "message": "untuk pilihan lokasi yang lebih banyak dan kecepatan yang lebih tinggi"
   },
+  "new": { "message": "BARU" },
+  "mobileAppAndroid": {
+    "message": "Aplikasi Seluler Gratis 1VPN untuk Android"
+  },
+
   "menu": { "message": "Menu" },
   "account": { "message": "Akun" },
   "options": { "message": "Opsi" },
