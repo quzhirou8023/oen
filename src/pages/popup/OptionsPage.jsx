@@ -1,5 +1,5 @@
 import { Flex, Link, Text } from 'theme-ui'
-import { isFirefox, websiteUrl } from 'utils/constants'
+import { isFirefox, websiteUrl, androidUrl } from 'utils/constants'
 import PageHeader from './PageHeader'
 import Toggle from './Toggle'
 
@@ -113,7 +113,7 @@ const OptionsPage = ({
           />
         </Flex>
         <Link
-          href="https://play.google.com/store/apps/details?id=com.vpn1.app"
+          href={androidUrl}
           target="_blank"
           sx={{
             all: 'unset',

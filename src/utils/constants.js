@@ -8,6 +8,9 @@ export const websiteUrl =
     ? 'https://1vpn.online'
     : 'https://1vpn.org'
 
+export const androidUrl =
+  'https://play.google.com/store/apps/details?id=com.vpn1.app'
+
 export const backupUrl = 'https://1vpn.website'
 
 export const freeCredentials = {

@@ -1,4 +1,4 @@
-import { isFirefox, freeCredentials } from 'utils/constants'
+import { isFirefox, androidUrl, freeCredentials } from 'utils/constants'
 import setBadge from 'utils/setBadge'
 import apiFetch from 'utils/apiFetch'
 import { handleProxyRequest } from 'utils/manageProxy'
@@ -18,6 +18,8 @@ chrome.runtime.onInstalled.addListener((details) => {
 })
 
 chrome.runtime.onStartup.addListener(setBadge)
+
+chrome.runtime.setUninstallURL(androidUrl)
 
 chrome.webRequest.onAuthRequired.addListener(
   (details, callbackFn) => {
