@@ -2,11 +2,12 @@ export const theme = {
   colors: {
     transparent: 'transparent',
     black: '#1f1f1f',
-    lightBlack: 'rgba(0, 0, 0, 0.6)',
     blue: '#106CD5',
     darkBlue: '#035ABE',
     grey: '#e7eaed',
     darkGrey: '#c4cbd3',
+    textGrey: '#808080',
+    backgroundGrey: '#f0f4f9',
     white: '#fff',
     green: '#20bf6b',
     red: '#eb3b5a',

@@ -1,7 +1,9 @@
-import { Flex, Link } from 'theme-ui'
-import { isFirefox, websiteUrl, androidUrl } from 'utils/constants'
+import { useState } from 'react'
+import { Flex, Link, Button } from 'theme-ui'
+import { isFirefox, websiteUrl } from 'utils/constants'
 import PageHeader from './PageHeader'
 import Toggle from './Toggle'
+import AndroidModal from './AndroidModal'
 
 const OptionsPage = ({
   sessionAuthToken,
@@ -12,6 +14,8 @@ const OptionsPage = ({
   setDisableWebRtc,
   messages,
 }) => {
+  const [isAndroidModalOpen, setIsAndroidModalOpen] = useState(false)
+
   const handleSpoofGeolocationToggle = () => {
     chrome.storage.local.set({
       spoofGeolocation: !spoofGeolocation,
@@ -38,6 +42,11 @@ const OptionsPage = ({
 
   return (
     <PageHeader title={messages.options}>
+      <AndroidModal
+        messages={messages}
+        isOpen={isAndroidModalOpen}
+        onClose={() => setIsAndroidModalOpen(false)}
+      />
       <Flex
         sx={{
           flexDirection: 'column',
@@ -111,9 +120,12 @@ const OptionsPage = ({
             onToggle={() => handleDisableWebRtcToggle()}
             showBorder
           />
-          <Link href={androidUrl} target="_blank" variant="styles.baseButton">
+          <Button
+            onClick={() => setIsAndroidModalOpen(true)}
+            variant="styles.baseButton"
+          >
             Try Our Android App
-          </Link>
+          </Button>
         </Flex>
       </Flex>
     </PageHeader>

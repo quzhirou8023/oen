@@ -1,7 +1,8 @@
-import { useContext } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { PageContext } from 'context/PageContext'
 import { Box, Flex, Button, Image, Link, Text } from 'theme-ui'
 import { websiteUrl } from 'utils/constants'
+import AndroidModal from './AndroidModal'
 import flags from 'utils/flags'
 import Logo from 'assets/logo.svg'
 import MenuIcon from 'assets/menu.svg'
@@ -12,190 +13,223 @@ const MainPage = ({
   isConnected,
   currentLocation,
   handleConnectionToggle,
+  installDate,
   messages,
 }) => {
   const { setCurrentPage } = useContext(PageContext)
+  const [isAndroidModalOpen, setIsAndroidModalOpen] = useState(false)
+
+  useEffect(() => {
+    const checkAndroidModal = async () => {
+      const now = Date.now()
+      const installTime =
+        typeof installDate === 'string'
+          ? new Date(installDate).getTime()
+          : installDate
+
+      chrome.storage.local.get(['androidModalClicked'], (result) => {
+        if (
+          !result.androidModalClicked &&
+          installTime &&
+          now - installTime > 60 * 60 * 1000
+        ) {
+          setIsAndroidModalOpen(true)
+          chrome.storage.local.set({ androidModalClicked: true })
+        }
+      })
+    }
+    checkAndroidModal()
+  }, [installDate])
 
   return (
-    <Flex
-      sx={{
-        flexDirection: 'column',
-        color: 'black',
-        gap: '40px',
-        p: '24px',
-        overflow: 'hidden',
-      }}
-    >
+    <>
+      <AndroidModal
+        messages={messages}
+        isOpen={isAndroidModalOpen}
+        onClose={() => setIsAndroidModalOpen(false)}
+      />
       <Flex
         sx={{
-          justifyContent: 'space-between',
-          alignItems: 'center',
+          flexDirection: 'column',
+          color: 'black',
+          gap: '40px',
+          p: '24px',
+          overflow: 'hidden',
         }}
       >
-        <Link
-          href={websiteUrl}
-          target="_blank"
+        <Flex
           sx={{
-            all: 'unset',
-            cursor: 'pointer',
-            height: '32px',
+            justifyContent: 'space-between',
+            alignItems: 'center',
           }}
         >
-          <Image
-            src={Logo}
+          <Link
+            href={websiteUrl}
+            target="_blank"
             sx={{
+              all: 'unset',
+              cursor: 'pointer',
               height: '32px',
             }}
-          />
-        </Link>
-        <Button
-          id="optionsPageButton"
-          onClick={() => setCurrentPage('options')}
-          title={messages.goToOptionsPage}
-          sx={{
-            all: 'unset',
-            cursor: 'pointer',
-          }}
-        >
-          <Image
-            src={MenuIcon}
-            sx={{
-              height: '24px',
-            }}
-          />
-        </Button>
-      </Flex>
-      <Flex
-        sx={{
-          alignItems: 'center',
-          justifyContent: 'center',
-          flexDirection: 'column',
-        }}
-      >
-        <Flex sx={{ height: '68px', width: '120px', justifyContent: 'center' }}>
+          >
+            <Image
+              src={Logo}
+              sx={{
+                height: '32px',
+              }}
+            />
+          </Link>
           <Button
-            id="proxyToggle"
-            onClick={() => handleConnectionToggle()}
-            title={isConnected ? messages.connected : messages.disconnected}
+            id="optionsPageButton"
+            onClick={() => setCurrentPage('options')}
+            title={messages.goToOptionsPage}
             sx={{
-              appearance: 'none',
+              all: 'unset',
               cursor: 'pointer',
-              p: '8px',
-              height: '100%',
-              width: '100%',
-              borderRadius: '68px',
-              backgroundColor: isConnected ? 'blue' : 'darkGrey',
-              transition: 'all 0.2s ease-in-out',
             }}
           >
-            <Box
+            <Image
+              src={MenuIcon}
               sx={{
-                height: '52px',
-                width: '52px',
-                backgroundColor: '#fff',
-                borderRadius: '50px',
-                transform: `translateX(${isConnected ? '100%' : '0%'})`,
-                transition: 'all 0.2s ease-in-out',
+                height: '24px',
               }}
             />
           </Button>
         </Flex>
-        <Box
+        <Flex
           sx={{
-            mt: '8px',
-            fontSize: '16px',
-            height: '20px',
-          }}
-        >
-          {isConnected ? messages.connected : messages.disconnected}
-        </Box>
-      </Flex>
-      <Flex
-        sx={{
-          flexDirection: 'column',
-        }}
-      >
-        <Button
-          id="locationsPageButton"
-          onClick={() => setCurrentPage('locations')}
-          title={messages.goToLocationsPage}
-          sx={{
-            display: 'flex',
             alignItems: 'center',
-            justifyContent: 'space-between',
-            cursor: 'pointer',
-            px: '20px',
-            height: '48px',
-            width: '100%',
-            borderRadius: '6px',
-            fontSize: '16px',
-            color: 'black',
-            backgroundColor: 'grey',
-            transition: 'all 0.2s ease-in-out',
+            justifyContent: 'center',
+            flexDirection: 'column',
           }}
         >
-          <Image
-            src={flags[currentLocation.countryCode]}
+          <Flex
+            sx={{ height: '68px', width: '120px', justifyContent: 'center' }}
+          >
+            <Button
+              id="proxyToggle"
+              onClick={() => handleConnectionToggle()}
+              title={isConnected ? messages.connected : messages.disconnected}
+              sx={{
+                appearance: 'none',
+                cursor: 'pointer',
+                p: '8px',
+                height: '100%',
+                width: '100%',
+                borderRadius: '68px',
+                backgroundColor: isConnected ? 'blue' : 'darkGrey',
+                transition: 'all 0.2s ease-in-out',
+              }}
+            >
+              <Box
+                sx={{
+                  height: '52px',
+                  width: '52px',
+                  backgroundColor: '#fff',
+                  borderRadius: '50px',
+                  transform: `translateX(${isConnected ? '100%' : '0%'})`,
+                  transition: 'all 0.2s ease-in-out',
+                }}
+              />
+            </Button>
+          </Flex>
+          <Box
             sx={{
+              mt: '8px',
+              fontSize: '16px',
               height: '20px',
-              width: '20px',
-              borderRadius: '6px',
-              backgroundColor: 'darkGrey',
             }}
-          />
-          {messages[currentLocation.countryCode]}
-          <Image
-            src={ChevronRight}
+          >
+            {isConnected ? messages.connected : messages.disconnected}
+          </Box>
+        </Flex>
+        <Flex
+          sx={{
+            flexDirection: 'column',
+          }}
+        >
+          <Button
+            id="locationsPageButton"
+            onClick={() => setCurrentPage('locations')}
+            title={messages.goToLocationsPage}
             sx={{
-              height: '18px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              cursor: 'pointer',
+              px: '20px',
+              height: '48px',
+              width: '100%',
+              borderRadius: '6px',
+              fontSize: '16px',
+              color: 'black',
+              backgroundColor: 'grey',
+              transition: 'all 0.2s ease-in-out',
             }}
-          />
-        </Button>
+          >
+            <Image
+              src={flags[currentLocation.countryCode]}
+              sx={{
+                height: '20px',
+                width: '20px',
+                borderRadius: '6px',
+                backgroundColor: 'darkGrey',
+              }}
+            />
+            {messages[currentLocation.countryCode]}
+            <Image
+              src={ChevronRight}
+              sx={{
+                height: '18px',
+              }}
+            />
+          </Button>
 
-        {!isPremium && (
-          <>
-            {chrome.i18n.getUILanguage().startsWith('ru') ? (
-              <Text
-                sx={{
-                  fontSize: '12px',
-                  textAlign: 'center',
-                  mt: '24px',
-                }}
-              >
-                Серверы могут блокироваться в России из-за ограничений со
-                стороны правительства. Мы работаем над их обходом. Спасибо.
-              </Text>
-            ) : (
-              <Link
-                id="upgradeLink"
-                href={`${websiteUrl}/select_plan`}
-                target="_blank"
-                sx={{
-                  all: 'unset',
-                  cursor: 'pointer',
-                  fontSize: '12px',
-                  textAlign: 'center',
-                  mt: '24px',
-                  ':hover': {
-                    textDecoration: 'underline',
-                  },
-                }}
-              >
+          {!isPremium && (
+            <>
+              {chrome.i18n.getUILanguage().startsWith('ru') ? (
                 <Text
                   sx={{
-                    color: 'darkBlue',
-                    textDecoration: 'underline',
+                    fontSize: '12px',
+                    textAlign: 'center',
+                    mt: '24px',
                   }}
                 >
-                  {messages.upgradeText1}
-                </Text>{' '}
-                {messages.upgradeText2}
-              </Link>
-            )}
-          </>
-        )}
+                  Серверы могут блокироваться в России из-за ограничений со
+                  стороны правительства. Мы работаем над их обходом. Спасибо.
+                </Text>
+              ) : (
+                <Link
+                  id="upgradeLink"
+                  href={`${websiteUrl}/select_plan`}
+                  target="_blank"
+                  sx={{
+                    all: 'unset',
+                    cursor: 'pointer',
+                    fontSize: '12px',
+                    textAlign: 'center',
+                    mt: '24px',
+                    ':hover': {
+                      textDecoration: 'underline',
+                    },
+                  }}
+                >
+                  <Text
+                    sx={{
+                      color: 'darkBlue',
+                      textDecoration: 'underline',
+                    }}
+                  >
+                    {messages.upgradeText1}
+                  </Text>{' '}
+                  {messages.upgradeText2}
+                </Link>
+              )}
+            </>
+          )}
+        </Flex>
       </Flex>
-    </Flex>
+    </>
   )
 }
 

@@ -94,6 +94,7 @@ const Popup = () => {
             currentLocation={currentLocation || freeLocations[0]}
             locations={isPremium ? locations : freeLocations}
             handleConnectionToggle={handleConnectionToggle}
+            installDate={installDate}
             messages={messages}
           />
         )

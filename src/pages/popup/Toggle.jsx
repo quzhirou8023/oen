@@ -96,7 +96,7 @@ const Toggle = ({
         <Box
           sx={{
             fontSize: '12px',
-            color: 'lightBlack',
+            color: 'textGrey',
             mr: '48px',
             maxWidth: '228px',
           }}

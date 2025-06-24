@@ -31,7 +31,7 @@ const App = () => {
             flexDirection: 'column',
             justifyContent: 'center',
             textAlign: 'center',
-            backgroundColor: '#f0f4f9',
+            backgroundColor: 'backgroundGrey',
             borderRadius: '12px',
             p: '32px',
           }}
@@ -48,7 +48,7 @@ const App = () => {
           <Box
             sx={{
               fontSize: '16px',
-              color: 'gray',
+              color: 'textGrey',
               mb: '16px',
             }}
           >
@@ -76,7 +76,7 @@ const App = () => {
             fontSize: '14px',
             width: '100%',
             mx: 'auto',
-            backgroundColor: '#f0f4f9',
+            backgroundColor: 'backgroundGrey',
             borderRadius: '12px',
             p: '32px',
           }}
@@ -103,7 +103,7 @@ const App = () => {
             <Box
               sx={{
                 fontSize: '15px',
-                color: 'gray',
+                color: 'textGrey',
                 mb: '8px',
               }}
             >
@@ -136,7 +136,7 @@ const App = () => {
             }}
           >
             <QRCodeSVG
-              value="https://play.google.com/store/apps/details?id=com.vpn1.app"
+              value={androidUrl}
               width="108"
               height="108"
               bgColor="#fff"
