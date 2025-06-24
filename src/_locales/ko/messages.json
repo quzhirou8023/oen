@@ -17,8 +17,6 @@
   "goToLocationsPage": { "message": "지역위치 페이지로 이동가기" },
   "upgradeText1": { "message": "업그레이드" },
   "upgradeText2": { "message": "더 많은 위치와 더 빠른 속도를 위해" },
-  "new": { "message": "신규" },
-  "mobileAppAndroid": { "message": "안드로이드용 무료 1VPN 모바일 앱" },
   "menu": { "message": "메뉴" },
   "account": { "message": "계정" },
   "options": { "message": "옵션" },

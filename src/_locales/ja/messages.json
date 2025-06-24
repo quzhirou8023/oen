@@ -17,8 +17,6 @@
   "goToLocationsPage": { "message": "位置情報ページへ" },
   "upgradeText1": { "message": "アップグレード" },
   "upgradeText2": { "message": "位置情報の選択肢を増やし速度を向上" },
-  "new": { "message": "新着" },
-  "mobileAppAndroid": { "message": "Android向け無料1VPNモバイルアプリ" },
   "menu": { "message": "メニュー" },
   "account": { "message": "アカウント" },
   "options": { "message": "設定" },

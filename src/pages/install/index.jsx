@@ -98,7 +98,7 @@ const App = () => {
                 mb: '4px',
               }}
             >
-              Try our Android App
+              Try Our Android App
             </Box>
             <Box
               sx={{

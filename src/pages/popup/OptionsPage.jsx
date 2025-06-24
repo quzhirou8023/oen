@@ -1,4 +1,4 @@
-import { Flex, Link, Text } from 'theme-ui'
+import { Flex, Link } from 'theme-ui'
 import { isFirefox, websiteUrl, androidUrl } from 'utils/constants'
 import PageHeader from './PageHeader'
 import Toggle from './Toggle'
@@ -111,30 +111,10 @@ const OptionsPage = ({
             onToggle={() => handleDisableWebRtcToggle()}
             showBorder
           />
+          <Link href={androidUrl} target="_blank" variant="styles.baseButton">
+            Try Our Android App
+          </Link>
         </Flex>
-        <Link
-          href={androidUrl}
-          target="_blank"
-          sx={{
-            all: 'unset',
-            cursor: 'pointer',
-            fontSize: '12px',
-            textAlign: 'center',
-            mt: '24px',
-            ':hover': {
-              textDecoration: 'underline',
-            },
-          }}
-        >
-          <Text
-            sx={{
-              color: 'darkBlue',
-            }}
-          >
-            {messages.new}:
-          </Text>{' '}
-          {messages.mobileAppAndroid} →
-        </Link>
       </Flex>
     </PageHeader>
   )

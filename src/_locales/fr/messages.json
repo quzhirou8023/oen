@@ -19,10 +19,6 @@
   "upgradeText2": {
     "message": "pour obtenir plus d’emplacements et des vitesses plus élevées"
   },
-  "new": { "message": "NOUVEAU" },
-  "mobileAppAndroid": {
-    "message": "Application mobile gratuite 1VPN pour Android"
-  },
   "menu": { "message": "Menu" },
   "account": { "message": "Compte" },
   "options": { "message": "Options" },

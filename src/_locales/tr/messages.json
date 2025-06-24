@@ -17,10 +17,6 @@
   "goToLocationsPage": { "message": "Konumlar Sayfasına Git" },
   "upgradeText1": { "message": "Yükselt" },
   "upgradeText2": { "message": "daha fazla konum ve daha yüksek hızlar için" },
-  "new": { "message": "YENİ" },
-  "mobileAppAndroid": {
-    "message": "Android için ücretsiz 1VPN mobil uygulaması"
-  },
   "menu": { "message": "Menü" },
   "account": { "message": "Hesap" },
   "options": { "message": "Seçenekler" },

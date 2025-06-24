@@ -19,10 +19,6 @@
   "upgradeText2": {
     "message": "для більшої кількості локацій та кращої швидкості"
   },
-  "new": { "message": "НОВИНКА" },
-  "mobileAppAndroid": {
-    "message": "Безкоштовний мобільний додаток 1VPN для Android"
-  },
   "menu": { "message": "Меню" },
   "account": { "message": "Акаунт" },
   "options": { "message": "Опції" },
