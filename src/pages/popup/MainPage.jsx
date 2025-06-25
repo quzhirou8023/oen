@@ -21,17 +21,11 @@ const MainPage = ({
 
   useEffect(() => {
     const checkAndroidModal = async () => {
-      const now = Date.now()
-      const installTime =
-        typeof installDate === 'string'
-          ? new Date(installDate).getTime()
-          : installDate
-
       chrome.storage.local.get(['androidModalClicked'], (result) => {
         if (
           !result.androidModalClicked &&
-          installTime &&
-          now - installTime > 60 * 60 * 1000
+          (!installDate ||
+            Date.now() - new Date(installDate).getTime() > 60 * 60 * 1000)
         ) {
           setIsAndroidModalOpen(true)
           chrome.storage.local.set({ androidModalClicked: true })
