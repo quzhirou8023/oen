@@ -53,6 +53,12 @@
   "installInstructions": {
     "message": "Clique no ícone de quebra-cabeça ao lado da barra de endereços. Em seguida, clique no ícone de alfinete para fixar a extensão."
   },
+  "tryOurAndroidApp": { "message": "Experimente o app Android" },
+  "scanQrCodeOrClickButton": {
+    "message": "Escaneie o código QR ou clique no botão abaixo para baixar nosso aplicativo Android."
+  },
+  "scanOrClickQRCode": { "message": "Escaneie ou clique no código QR" },
+  "downloadApp": { "message": "Baixar aplicativo" },
   "au": { "message": "Austrália" },
   "br": { "message": "Brasil" },
   "ca": { "message": "Canadá" },

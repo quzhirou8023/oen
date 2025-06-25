@@ -51,6 +51,12 @@
   "installInstructions": {
     "message": "點擊位於地址列旁的拼圖圖示。然後點擊圖釘圖示以固定擴充功能。"
   },
+  "tryOurAndroidApp": { "message": "試用我們的安卓應用程式" },
+  "scanQrCodeOrClickButton": {
+    "message": "掃描 QR 碼或點擊下方按鈕下載我們的安卓應用程式。"
+  },
+  "scanOrClickQRCode": { "message": "掃描或點擊 QR 碼" },
+  "downloadApp": { "message": "下載應用程式" },
   "au": { "message": "澳洲" },
   "br": { "message": "巴西" },
   "ca": { "message": "加拿大" },

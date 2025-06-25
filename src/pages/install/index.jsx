@@ -98,7 +98,7 @@ const App = () => {
                 mb: '4px',
               }}
             >
-              Try Our Android App
+              {messages.tryOurAndroidApp}
             </Box>
             <Box
               sx={{
@@ -107,21 +107,20 @@ const App = () => {
                 mb: '8px',
               }}
             >
-              Scan the QR code or click the button below to download our Android
-              app.
+              {messages.scanQrCodeOrClickButton}
             </Box>
             <Link
               href={androidUrl}
               target="_blank"
               variant="styles.baseButton"
               sx={{
-                width: '200px',
+                width: '215px',
                 fontSize: '16px',
                 fontWeight: 500,
                 mt: '8px',
               }}
             >
-              Download App
+              {messages.downloadApp}
             </Link>
           </Box>
           <Box

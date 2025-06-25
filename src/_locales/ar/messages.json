@@ -51,6 +51,12 @@
   "installInstructions": {
     "message": "انقر على أيقونة اللغز بجانب شريط العنوان. ثم انقر على أيقونة الدبوس لتثبيت الإضافة."
   },
+  "tryOurAndroidApp": { "message": "جرّب تطبيق أندرويد الخاص بنا" },
+  "scanQrCodeOrClickButton": {
+    "message": "امسح رمز الاستجابة السريعة أو انقر على الزر أدناه لتنزيل تطبيق أندرويد الخاص بنا."
+  },
+  "scanOrClickQRCode": { "message": "امسح أو انقر على رمز الاستجابة السريعة" },
+  "downloadApp": { "message": "تحميل التطبيق" },
   "au": { "message": "أستراليا" },
   "br": { "message": "البرازيل" },
   "ca": { "message": "كندا" },

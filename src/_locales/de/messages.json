@@ -58,6 +58,12 @@
   "installInstructions": {
     "message": "Klicken Sie auf das Puzzle-Symbol neben der Adressleiste. Klicken Sie dann auf das Stecknadel-Symbol, um die Erweiterung anzuheften."
   },
+  "tryOurAndroidApp": { "message": "Probiere unsere Android-App aus" },
+  "scanQrCodeOrClickButton": {
+    "message": "Scanne den QR-Code oder klicke auf den Button, um die App herunterzuladen."
+  },
+  "scanOrClickQRCode": { "message": "QR-Code scannen oder anklicken" },
+  "downloadApp": { "message": "App herunterladen" },
   "au": { "message": "Australien" },
   "br": { "message": "Brasilien" },
   "ca": { "message": "Kanada" },

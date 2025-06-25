@@ -55,6 +55,12 @@
   "installInstructions": {
     "message": "Нажмите на значок пазла рядом со строкой адреса. Затем нажмите на значок булавки, чтобы закрепить расширение."
   },
+  "tryOurAndroidApp": { "message": "Попробуйте Android-приложение" },
+  "scanQrCodeOrClickButton": {
+    "message": "Сканируйте QR-код или нажмите кнопку для загрузки."
+  },
+  "scanOrClickQRCode": { "message": "Сканируйте или нажмите на QR-код" },
+  "downloadApp": { "message": "Скачать приложение" },
   "au": { "message": "Австралия" },
   "br": { "message": "Бразилия" },
   "ca": { "message": "Канада" },

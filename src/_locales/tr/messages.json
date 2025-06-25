@@ -53,6 +53,12 @@
   "installInstructions": {
     "message": "Adres çubuğunun yanındaki puzzle simgesine tıklayın. Ardından uzantıyı sabitlemek için raptiye simgesine tıklayın."
   },
+  "tryOurAndroidApp": { "message": "Android Uygulamamızı Deneyin" },
+  "scanQrCodeOrClickButton": {
+    "message": "Android uygulamamızı indirmek için QR kodunu tarayın veya aşağıdaki butona tıklayın."
+  },
+  "scanOrClickQRCode": { "message": "QR kodunu tarayın veya tıklayın" },
+  "downloadApp": { "message": "Uygulamayı indir" },
   "au": { "message": "Avustralya" },
   "br": { "message": "Brezilya" },
   "ca": { "message": "Kanada" },

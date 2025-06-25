@@ -51,6 +51,12 @@
   "upgradeLocation": {
     "message": "Перейдіть на преміум план підписки, щоб отримати доступ до цієї локації"
   },
+  "tryOurAndroidApp": { "message": "Спробуйте Android-додаток" },
+  "scanQrCodeOrClickButton": {
+    "message": "Скануйте QR або натисніть кнопку, щоб завантажити додаток."
+  },
+  "scanOrClickQRCode": { "message": "Скануйте або натисніть на QR-код" },
+  "downloadApp": { "message": "Завантажити додаток" },
   "au": { "message": "Австралія" },
   "br": { "message": "Бразилія" },
   "ca": { "message": "Канада" },

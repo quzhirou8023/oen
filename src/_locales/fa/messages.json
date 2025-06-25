@@ -51,6 +51,12 @@
   "upgradeLocation": {
     "message": "برای دسترسی به این موقعیت مکانی می‌بایست عضویت خود را ارتقا دهید"
   },
+  "tryOurAndroidApp": { "message": "برنامه اندروید ما را امتحان کنید" },
+  "scanQrCodeOrClickButton": {
+    "message": "کد QR را اسکن کنید یا روی دکمه زیر کلیک کنید تا برنامه اندروید ما را دانلود کنید."
+  },
+  "scanOrClickQRCode": { "message": "کد QR را اسکن یا کلیک کنید" },
+  "downloadApp": { "message": "دانلود برنامه" },
   "au": { "message": "استرالیا" },
   "br": { "message": "برزیل" },
   "ca": { "message": "کانادا" },

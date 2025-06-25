@@ -53,6 +53,12 @@
   "installInstructions": {
     "message": "Nhấp vào biểu tượng mảnh ghép bên cạnh thanh địa chỉ. Sau đó, nhấp vào biểu tượng ghim để ghim tiện ích."
   },
+  "tryOurAndroidApp": { "message": "Thử app Android" },
+  "scanQrCodeOrClickButton": {
+    "message": "Quét mã QR hoặc nhấp vào nút bên dưới để tải ứng dụng Android của chúng tôi."
+  },
+  "scanOrClickQRCode": { "message": "Quét hoặc nhấp vào mã QR" },
+  "downloadApp": { "message": "Tải ứng dụng" },
   "au": { "message": "Úc" },
   "br": { "message": "Brazil" },
   "ca": { "message": "Canada" },

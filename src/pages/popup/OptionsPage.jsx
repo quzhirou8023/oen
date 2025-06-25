@@ -124,7 +124,7 @@ const OptionsPage = ({
             onClick={() => setIsAndroidModalOpen(true)}
             variant="styles.baseButton"
           >
-            Try Our Android App
+            {messages.tryOurAndroidApp}
           </Button>
         </Flex>
       </Flex>

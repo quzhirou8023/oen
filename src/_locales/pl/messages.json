@@ -53,6 +53,12 @@
   "upgradeLocation": {
     "message": "Zaktualizuj, aby uzyskać dostęp do tej lokalizacji"
   },
+  "tryOurAndroidApp": { "message": "Wypróbuj apkę na Androida" },
+  "scanQrCodeOrClickButton": {
+    "message": "Zeskanuj kod QR lub kliknij przycisk poniżej, aby pobrać naszą aplikację na Androida."
+  },
+  "scanOrClickQRCode": { "message": "Zeskanuj lub kliknij kod QR" },
+  "downloadApp": { "message": "Pobierz aplikację" },
   "au": { "message": "Australia" },
   "br": { "message": "Brazylia" },
   "ca": { "message": "Kanada" },

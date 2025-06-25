@@ -55,6 +55,12 @@
   "installInstructions": {
     "message": "Haz clic en el ícono de rompecabezas junto a la barra de direcciones. Luego, haz clic en el ícono de chincheta para anclar la extensión."
   },
+  "tryOurAndroidApp": { "message": "Prueba la app de Android" },
+  "scanQrCodeOrClickButton": {
+    "message": "Escanea el código QR o haz clic en el botón para descargar la app."
+  },
+  "scanOrClickQRCode": { "message": "Escanea o haz clic en el código QR" },
+  "downloadApp": { "message": "Descargar aplicación" },
   "au": { "message": "Australia" },
   "br": { "message": "Brasil" },
   "ca": { "message": "Canadá" },

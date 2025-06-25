@@ -53,6 +53,12 @@
   "installInstructions": {
     "message": "アドレスバーの横にあるパズルアイコンをクリックしてください。次にピンアイコンをクリックして拡張機能を固定してください。"
   },
+  "tryOurAndroidApp": { "message": "Androidアプリを試す" },
+  "scanQrCodeOrClickButton": {
+    "message": "QRコードをスキャンするか、ボタンを押してアプリをダウンロード。"
+  },
+  "scanOrClickQRCode": { "message": "QRコードをスキャンまたはクリック" },
+  "downloadApp": { "message": "アプリをダウンロード" },
   "au": { "message": "オーストラリア" },
   "br": { "message": "ブラジル" },
   "ca": { "message": "カナダ" },

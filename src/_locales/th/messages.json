@@ -51,6 +51,12 @@
   "rateText1": { "message": "หากคุณถูกใจ 1VPN โปรด" },
   "rateText2": { "message": "ให้คะแนน 5 ดาวกับเรา" },
   "upgradeLocation": { "message": "อัพเกรดเพื่อเข้าถึงสถานที่ตั้งดังนี้" },
+  "tryOurAndroidApp": { "message": "ลองใช้แอป Android ของเรา" },
+  "scanQrCodeOrClickButton": {
+    "message": "สแกนรหัส QR หรือคลิกปุ่มด้านล่างเพื่อดาวน์โหลดแอป Android ของเรา"
+  },
+  "scanOrClickQRCode": { "message": "สแกนหรือคลิกที่รหัส QR" },
+  "downloadApp": { "message": "ดาวน์โหลดแอป" },
   "au": { "message": "ออสเตรเลีย" },
   "br": { "message": "บราซิล" },
   "ca": { "message": "แคนาดา" },

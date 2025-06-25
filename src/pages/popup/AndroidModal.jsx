@@ -11,7 +11,7 @@ const AndroidModal = ({ messages, isOpen, onClose }) => {
 
   return (
     <Modal isOpen={isOpen} onClose={onClose} width="220px">
-      <Box>Try Our Android App</Box>
+      <Box>{messages.tryOurAndroidApp}</Box>
       <Box
         sx={{
           fontSize: '12px',
@@ -19,7 +19,7 @@ const AndroidModal = ({ messages, isOpen, onClose }) => {
           mb: '8px',
         }}
       >
-        Scan or click the QR code
+        {messages.scanOrClickQRCode}
       </Box>
       <Button
         onClick={handleClick}

@@ -50,6 +50,16 @@
   "installInstructions": {
     "message": "Click on the puzzle icon next to the address bar. Then click on the pushpin icon to pin the Extension."
   },
+  "tryOurAndroidApp": {
+    "message": "Try Our Android App"
+  },
+  "scanQrCodeOrClickButton": {
+    "message": "Scan the QR code or click the button below to download our Android app."
+  },
+  "scanOrClickQRCode": {
+    "message": "Scan or click the QR code"
+  },
+  "downloadApp": { "message": "Download App" },
   "au": { "message": "Australia" },
   "br": { "message": "Brazil" },
   "ca": { "message": "Canada" },

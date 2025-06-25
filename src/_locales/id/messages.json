@@ -55,6 +55,12 @@
   "installInstructions": {
     "message": "Klik ikon puzzle di sebelah bilah alamat. Kemudian klik ikon pin untuk menyematkan ekstensi."
   },
+  "tryOurAndroidApp": { "message": "Coba Aplikasi Android Kami" },
+  "scanQrCodeOrClickButton": {
+    "message": "Pindai kode QR atau klik tombol di bawah untuk mengunduh aplikasi Android kami."
+  },
+  "scanOrClickQRCode": { "message": "Pindai atau klik kode QR" },
+  "downloadApp": { "message": "Unduh Aplikasi" },
   "au": { "message": "Australia" },
   "br": { "message": "Brasil" },
   "ca": { "message": "Kanada" },
