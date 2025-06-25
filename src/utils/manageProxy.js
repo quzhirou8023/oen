@@ -58,11 +58,9 @@ const connect = async (hosts) => {
       })
     })
 
-    // const randomizedHosts = [...hosts].sort(() => Math.random() - 0.5)
+    const randomizedHosts = [...hosts].sort(() => Math.random() - 0.5)
 
-    // const pacScript = getPacScript(randomizedHosts)
-
-    const pacScript = getPacScript(hosts)
+    const pacScript = getPacScript(randomizedHosts)
 
     chrome.proxy.settings.set({
       value: {
