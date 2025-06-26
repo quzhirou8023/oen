@@ -14,7 +14,13 @@ const ReviewModal = ({ messages, isOpen, onClose }) => {
 
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
-      <Box>{messages.reviewModalTitle}</Box>
+      <Box
+        sx={{
+          mb: '8px',
+        }}
+      >
+        {messages.reviewModalTitle}
+      </Box>
       <Button
         onClick={handleReviewClick}
         variant="styles.baseButton"
