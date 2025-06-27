@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from 'react'
 import { PageContext } from 'context/PageContext'
 import { Box, Flex, Button, Image, Link, Text } from 'theme-ui'
-import { websiteUrl } from 'utils/constants'
+import { isFirefox, websiteUrl } from 'utils/constants'
 import AndroidModal from './AndroidModal'
 import flags from 'utils/flags'
 import Logo from 'assets/logo.svg'
@@ -32,7 +32,9 @@ const MainPage = ({
         }
       })
     }
-    checkAndroidModal()
+    if (!isFirefox) {
+      checkAndroidModal()
+    }
   }, [installDate])
 
   return (
